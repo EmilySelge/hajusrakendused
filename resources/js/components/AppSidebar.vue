@@ -1,14 +1,7 @@
 <script setup lang="ts">
 import { Link } from '@inertiajs/vue3';
 import { BookOpen, FolderGit2 } from 'lucide-vue-next';
-import {
-    LayoutGrid,
-    Cloud,
-    Earth,
-    FileText,
-    ShoppingBag,
-    CookingPot,
-} from 'lucide-vue-next';
+import { LayoutGrid, Cloud, Earth, FileText, ShoppingBag, CookingPot, Music } from 'lucide-vue-next';
 import AppLogo from '@/components/AppLogo.vue';
 import NavFooter from '@/components/NavFooter.vue';
 import NavMain from '@/components/NavMain.vue';
@@ -56,6 +49,11 @@ const mainNavItems: NavItem[] = [
         href: '/recipes',
         icon: CookingPot,
     },
+    {
+    title: 'Music',
+    href: '/music',
+    icon: Music,
+},
 ];
 
 const footerNavItems: NavItem[] = [

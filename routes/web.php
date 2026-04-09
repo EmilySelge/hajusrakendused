@@ -39,6 +39,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('/recipes', [RecipeController::class, 'store'])->name('recipes.store');
     Route::put('/recipes/{recipe}', [RecipeController::class, 'update'])->name('recipes.update');
     Route::delete('/recipes/{recipe}', [RecipeController::class, 'destroy'])->name('recipes.destroy');
+    Route::inertia('/music', 'Music')->name('music');
 });
 
 Route::middleware('throttle:60,1')->group(function () {
